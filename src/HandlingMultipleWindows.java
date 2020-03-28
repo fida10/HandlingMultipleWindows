@@ -9,7 +9,7 @@ public class HandlingMultipleWindows {
 		Set<String> windowHandles = dr.getWindowHandles();
 		Iterator<String> iWHandles = windowHandles.iterator();
 
-		for(int i = 0; i < windowHandles.size(); i++){
+		for(int i = 0; i < windowHandles.size(); i++){ //can also use while loop and has.next() iterator method.
 			dr.switchTo().window(iWHandles.next());
 			String currentUrl = dr.getCurrentUrl();
 			String currentHandle = dr.getWindowHandle();
