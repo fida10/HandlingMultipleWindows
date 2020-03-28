@@ -1,4 +1,4 @@
-//this class will cycle thru all open webdriver windows, giving the handle and the URL
+//This class will cycle thru all open webdriver windows, giving the handle and the URL
 import org.openqa.selenium.WebDriver;
 
 import java.util.Iterator;
