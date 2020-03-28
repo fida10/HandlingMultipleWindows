@@ -13,7 +13,8 @@ public class HandlingMultipleWindows {
 			dr.switchTo().window(iWHandles.next());
 			String currentUrl = dr.getCurrentUrl();
 			String currentHandle = dr.getWindowHandle();
-			System.out.println("Current window URL is " + currentUrl + " and current handle is " + currentHandle);
+			String currentTitle = dr.getTitle();
+			System.out.println("Current window URL is " + currentUrl + ", current handle is " + currentHandle + ", and the page title is " + currentTitle);
 		}
 		dr.switchTo().defaultContent();
 	}
