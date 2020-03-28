@@ -4,9 +4,6 @@ import org.openqa.selenium.WebDriver;
 import java.util.Iterator;
 import java.util.Set;
 
-import java.util.Iterator;
-import java.util.Set;
-
 public class HandlingMultipleWindows {
 	public static void handlingMultipleWindows(WebDriver dr){
 		Set<String> windowHandles = dr.getWindowHandles();
